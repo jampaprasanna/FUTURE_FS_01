@@ -5,46 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
 
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- 🔷 HEADER -->
 <header>
     <h1>Prasanna</h1>
     <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a> <!-- NEW -->
         <a href="#contact">Contact</a>
     </nav>
 </header>
 
-<!-- 🔷 HERO -->
 <section id="home" class="hero">
     <h2>Hello, I'm Prasanna 👋</h2>
     <p>Full Stack Developer | B.Tech Student</p>
 </section>
 
-<!-- 🔷 ABOUT -->
 <section id="about">
     <h2>About Me</h2>
-    <p>
-        I am a B.Tech student passionate about web development.
-        I am learning HTML, CSS, JavaScript, Node.js and MySQL.
-        I love building real-world projects.
-    </p>
+    <p>I am a B.Tech student passionate about web development. I build real-world projects.</p>
 </section>
 
-<!-- 🔷 SKILLS -->
 <section id="skills">
     <h2>My Skills</h2>
-
     <div class="skills-container">
         <div class="skill">HTML</div>
         <div class="skill">CSS</div>
@@ -55,7 +44,33 @@
     </div>
 </section>
 
-<!-- 🔷 CONTACT -->
+<!-- ✅ PROJECT SECTION -->
+<section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project-container">
+
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>Personal portfolio project</p>
+            <a href="https://github.com/jampaprasanna/FUTURE_FS_01" target="_blank">View Code</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Fish Delivery Website</h3>
+            <p>Online ordering system</p>
+            <a href="https://github.com/jampaprasanna/live-fish-delivery-website" target="_blank">View Code</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Student Management</h3>
+            <p>Manage student records</p>
+            <a href="https://github.com/jampaprasanna/student-management" target="_blank">View Code</a>
+        </div>
+
+    </div>
+</section>
+
 <section id="contact">
     <h2>Contact Me</h2>
 
@@ -69,12 +84,10 @@
     <p id="msg"></p>
 </section>
 
-<!-- 🔷 FOOTER -->
 <footer>
     <p>© 2026 Prasanna | All Rights Reserved</p>
 </footer>
 
-<!-- JS -->
 <script src="script.js"></script>
 
 </body>

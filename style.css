@@ -1,5 +1,12 @@
-body {
+/* Reset */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #1e3c72, #2a5298);
     color: white;
@@ -9,16 +16,22 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px 50px;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.4);
     position: sticky;
     top: 0;
+}
+
+header h1 {
+    font-size: 24px;
 }
 
 nav a {
     color: white;
     margin-left: 20px;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 nav a:hover {
@@ -27,12 +40,18 @@ nav a:hover {
 
 /* Sections */
 section {
-    padding: 60px;
+    padding: 70px 20px;
     text-align: center;
 }
 
-.hero {
-    padding: 100px 20px;
+/* Hero */
+.hero h2 {
+    font-size: 36px;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 18px;
 }
 
 /* Skills */
@@ -48,15 +67,45 @@ section {
     padding: 10px 20px;
     margin: 10px;
     border-radius: 20px;
+    font-weight: bold;
 }
 
-/* Form */
+/* Projects */
+.project-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: white;
+    color: black;
+    width: 260px;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: blue;
+    text-decoration: none;
+}
+
+/* Contact */
 input, textarea {
     width: 60%;
     padding: 12px;
     margin: 10px;
     border-radius: 5px;
     border: none;
+    outline: none;
 }
 
 button {
@@ -67,8 +116,34 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    background: #00cccc;
+}
+
+/* Message */
+#msg {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
 /* Footer */
 footer {
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.4);
     padding: 20px;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    input, textarea {
+        width: 90%;
+    }
 }
